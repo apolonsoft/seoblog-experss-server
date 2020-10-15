@@ -1,6 +1,7 @@
 const Category = require('../models/category')
 const slugify = require('slugify')
 const {errorHandler} = require('../helpers/errorHandler')
+require('dotenv').config();
 
 exports.create = (req, res) => {
     const {name} = req.body
